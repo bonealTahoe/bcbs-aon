@@ -27,8 +27,6 @@
 ****************************************************/
 
 html, body {
-  padding: 0;
-  margin: 0;
   font-size: 100%;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
@@ -42,7 +40,8 @@ body {
   font-style: normal;
   line-height: 1;
   position: relative;
-  cursor: default; }
+  cursor: default;
+}
 
 div,
 dl,
@@ -75,7 +74,8 @@ p {
   font-size: 1rem;
   line-height: 1.6;
   margin-bottom: 1.25rem;
-  text-rendering: optimizeLegibility; }
+  text-rendering: optimizeLegibility;
+}
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
@@ -88,7 +88,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 { font-size: 2.125rem; }
-h2 { font-size: 1.6875rem; }
+h2 { font-size: 1.6875rem; margin-bottom: 0; }
 h3 { font-size: 1.375rem; }
 h4 { font-size: 1.125rem; }
 h5 { font-size: 1.125rem; }
@@ -100,6 +100,8 @@ a { text-decoration: none; }
 /****************************************************
   2. Structure
 ****************************************************/
+
+
 
 .container-alpha {
   border-left: 1px solid #9F9F9F;
@@ -120,15 +122,15 @@ a { text-decoration: none; }
 }
 
   .content-top {
-
+    padding: 2em 0;
   }
 
   .content-mid {
-
+    padding: 2em 0;
   }
 
   .content-bot {
-
+    padding: 2em 0;
   }
 
 .footer {
@@ -218,6 +220,13 @@ a { text-decoration: none; }
   4. Modular / Icons
 ****************************************************/
 
+.row, .columns,
+.row:before,
+.row:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
 .row {
   width: 100%;
   margin-left: auto;
@@ -296,6 +305,12 @@ a { text-decoration: none; }
     float: left; }
 
 }
+
+  .column.small-centered,
+  .columns.small-centered {
+    margin-left: auto;
+    margin-right: auto;
+    float: none !important; }
 
 .left { float: left !important; }
 .right { float: right !important; }
