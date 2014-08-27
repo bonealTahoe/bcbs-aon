@@ -1,0 +1,469 @@
+@charset "utf-8";
+/****************************************************
+  
+  weo3 - last updated 08.19.14
+
+  0. Design Notes
+  1. HTML elements
+  2. Structure
+  3. Navigation
+  4. Modular / Icons
+  5. General
+  6. Queries
+  7. Yo Fonts Mama
+
+****************************************************/
+
+/****************************************************
+  0. Design Notes
+****************************************************/
+
+  /* boom shakalaka boom. all your layout belong to us. */
+
+
+
+/****************************************************
+  1. HTML elements
+****************************************************/
+
+html, body {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1;
+  position: relative;
+  cursor: default; }
+
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0; }
+
+a { line-height: inherit; }
+a img { border: none; }
+
+p {
+  font-family: inherit;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+  text-rendering: optimizeLegibility; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  text-rendering: optimizeLegibility;
+  margin-top: 0.2rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+
+h1 { font-size: 2.125rem; }
+h2 { font-size: 1.6875rem; }
+h3 { font-size: 1.375rem; }
+h4 { font-size: 1.125rem; }
+h5 { font-size: 1.125rem; }
+h6 { font-size: 1rem; }
+
+a { text-decoration: none; }
+
+
+/****************************************************
+  2. Structure
+****************************************************/
+
+.container-alpha {
+  border-left: 1px solid #9F9F9F;
+  border-right: 1px solid #9F9F9F;
+  box-shadow: 0 0 2em rgba(51, 51, 51, 0.5);
+}
+
+.header {
+  height: 6.875em;
+}
+
+.container-hero {
+
+}
+
+.container-content {
+
+}
+
+  .content-top {
+
+  }
+
+  .content-mid {
+
+  }
+
+  .content-bot {
+
+  }
+
+.footer {
+
+}
+
+.antialiased {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.alpha-vertical { padding-top: 0 !important; margin-top: 0 !important; }
+.omega-vertical { padding-bottom: 0 !important; margin-bottom: 0 !important; }
+
+.alpha-horizontal { padding-left: 0 !important; margin-left: 0 !important; }
+.omega-horizontal { padding-right: 0 !important; margin-right: 0 !important; }
+
+/****************************************************
+  3. Navigation
+****************************************************/
+
+.nav-main {
+  margin-right: 1em;
+  width: 31.525em;
+  margin-top: 0.25em;
+  margin-bottom: 0.25em;
+}
+
+.nav-main li {
+  float: left;
+  position: relative;
+  width: 20%;   /* desired width */
+}
+
+.nav-main li:before {
+  content: "";
+  display: block;
+  padding-top: 100%;  /* initial ratio of 1:1 */  
+}
+
+.nav-main li .nav-main-inner {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.nav-main li:first-child .nav-main-inner {
+  margin-left: 0;
+}
+
+.nav-main li:last-child .nav-main-inner {
+  margin-right: 0;
+  border-right: none;
+}
+
+.nav-main li .nav-main-inner a {
+  position: absolute;
+  color: #005AAB;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 0.55rem;
+  text-decoration: none; /** added to overwrite foundation a tag 5-7-2014 **/
+}
+
+.nav-main-inner a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.nav-main-inner a:hover, .nav-main-inner a.activated {
+  background-color: #005AAB;
+  background-color: rgba(0, 90, 171, 0.1);
+  border-radius: 0.5em;
+}
+
+.nav-main-inner a.activated {
+  cursor: default;
+}
+
+
+/****************************************************
+  4. Modular / Icons
+****************************************************/
+
+.row {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 60em; }
+  .row:before, .row:after {
+    content: " ";
+    display: table; }
+  .row:after {
+    clear: both; }
+  .row.collapse > .column,
+  .row.collapse > .columns {
+    padding-left: 0;
+    padding-right: 0; }
+  .row.collapse .row {
+    margin-left: 0;
+    margin-right: 0; }
+  .row .row {
+    width: 100%;
+    margin-left: -0.25em;
+    margin-right: -0.25em;
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: none; }
+    .row .row:before, .row .row:after {
+      content: " ";
+      display: table; }
+    .row .row:after {
+      clear: both; }
+    .row .row.collapse {
+      width: auto;
+      margin: 0;
+      max-width: none; }
+      .row .row.collapse:before, .row .row.collapse:after {
+        content: " ";
+        display: table; }
+      .row .row.collapse:after {
+        clear: both; }
+
+.column,
+.columns { padding-left: 0.25em; padding-right: 0.25em; width: 100%; float: left; }
+
+
+@media only screen {
+  .column,
+  .columns { position: relative; padding-left: 0.25em; padding-right: 0.25em; float: left; }
+  .small-1 { width: 4.7619%; }
+  .small-2 { width: 9.52381%; }
+  .small-3 { width: 14.28571%; }
+  .small-4 { width: 19.04762%; }
+  .small-5 { width: 23.80952%; }
+  .small-6 { width: 28.57143%; }
+  .small-7 { width: 33.33333%; }
+  .small-8 { width: 38.09524%; }
+  .small-9 { width: 42.85714%; }
+  .small-10 { width: 47.61905%; }
+  .small-105 { width: 50.0000%; }
+  .small-11 { width: 52.38095%; }
+  .small-12 { width: 57.14286%; }
+  .small-13 { width: 61.90476%; }
+  .small-14 { width: 66.66667%; }
+  .small-15 { width: 71.42857%; }
+  .small-16 { width: 76.19048%; }
+  .small-17 { width: 80.95238%; }
+  .small-18 { width: 85.71429%; }
+  .small-19 { width: 90.47619%; }
+  .small-20 { width: 95.2381%; }
+  .small-21 { width: 100%; }
+
+  [class*="column"] + [class*="column"]:last-child {
+    float: right; }
+
+  [class*="column"] + [class*="column"].end {
+    float: left; }
+
+}
+
+.left { float: left !important; }
+.right { float: right !important; }
+
+.txt-align-center { text-align: center; }
+
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after { clear: both; }
+
+.no-bullet { list-style-type: none; }
+
+.bg-white          { background-color: #FFF; background-color: rgba(255,255,255,1); }
+.bg-white-op5      { background-color: #FFF; background-color: rgba(255,255,255,0.5); }
+.bg-black          { background-color: #000; background-color: rgba(0,0,0,1); }
+.bg-bcbs-blue      { background-color: #005AAB; background-color: rgba(0, 90, 171, 1); }
+.bg-bcbs-blue-alt  { background-color: #0096D6; background-color: rgba(0,150,214, 1); }
+.bg-pearl          { background-color: #EEF4F5; background-color: rgba(238,244,245,1); }
+.bg-grey           { background-color: #AAA; background-color: rgba(204,204,204,1); }
+
+.bg-pearl-gradient {
+  background-color: #EFF5F7; /* always a fallback */
+  background-image: -webkit-gradient(
+  linear,
+  right top,
+  left bottom,
+  color-stop(0, #DAE7EB),
+  color-stop(1, #EFF5F7)
+  );
+  background-image: -o-linear-gradient(left bottom, #DAE7EB 0%, #EFF5F7 100%);
+  background-image: -moz-linear-gradient(left bottom, #DAE7EB 0%, #EFF5F7 100%);
+  background-image: -webkit-linear-gradient(left bottom, #DAE7EB 0%, #EFF5F7 100%);
+  background-image: -ms-linear-gradient(left bottom, #DAE7EB 0%, #EFF5F7 100%);
+  background-image: linear-gradient(to left bottom, #DAE7EB 0%, #EFF5F7 100%);
+}
+
+.txt-white          { color: #FFFFFF; rgba(255, 255, 255, 1); }
+.txt-black          { color: #000000; color: rgba(0, 0, 0, 1); }
+.txt-bcbs-blue      { color: #005AAB; color: rgba(0, 90, 171, 1); }
+.txt-bcbs-blue-alt  { color: #0096D6; color: rgba(0,150,214, 1); }
+.txt-bcbs-orange    { color: #F90; color: rgba(255, 154, 0, 1); }
+
+.txt-weight-heavy { font-weight: bold; }
+.txt-weight-light { font-weight: lighter; }
+
+
+.nav-icon {
+  width: 8em;
+  height: 6em;
+  display: block;
+  margin: 2em auto 0.8em;
+}
+
+.nav-scope { background: url('../img/baz-sprite.png') 0 -9em no-repeat; }
+.nav-piggy { background: url('../img/baz-sprite.png') -7.25em -9em no-repeat; }
+.nav-pills { background: url('../img/baz-sprite.png') -14.5em -9em no-repeat; }
+.nav-mdkit { background: url('../img/baz-sprite.png') -23em -9em no-repeat; }
+.nav-info  { background: url('../img/baz-sprite.png') -30.5em -9em no-repeat; }
+.nav-phone { background: url('../img/baz-sprite.png') 0 -18em no-repeat; }
+.nav-mouse { background: url('../img/baz-sprite.png') -8em -18em no-repeat; }
+
+
+.ui-icon {
+  width: 4em;
+  height: 3em;
+  display: block;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+}
+
+.ui-scope { background: url('../img/baz-sprite.png') 0.2em -9em no-repeat; }
+.ui-pills { background: url('../img/baz-sprite.png') -8.7em -9em no-repeat; }
+.ui-piggy { background: url('../img/baz-sprite.png') -4em -9em no-repeat; }
+
+.ico {
+  display: block;
+  position: absolute;
+}
+
+.ico-hero {
+  background: url('../img/baz-sprite.png') 0 -13em no-repeat;
+  height: 10em;
+  width: 30em;
+  display: block;
+  position: absolute;
+  left: 2em;
+  top: 6em;
+}
+
+
+
+/****************************************************
+  5. General
+****************************************************/
+
+.columns img {
+  max-width: 100%;
+}
+
+.logo-header {
+  height: 5em;
+  width: 20em;
+  background: url('../img/baz-sprite.png') 0 0 no-repeat;
+  display: block;
+  float: left;
+  margin-top: 1em;
+  margin-left: 1em;
+}
+
+.cta-group-item {
+
+}
+
+.cta-group-content {
+  border-radius: 1em;
+  height: 10em;
+  margin: 0 auto;
+}
+
+.cta-item {
+  line-height: 1.2em;
+  font-size: 1em;
+  margin: 0.65em;
+}
+
+.cta-group-title {
+  display: block;
+  margin: 0.8em 0 1em 3.5em;
+  font-size: 1.25em;
+}
+
+.info-listing {
+
+}
+
+
+
+
+/****************************************************
+  6. Queries
+****************************************************/
+
+
+
+
+
+@media screen and (min-width: 56.33333em) {
+
+  .container-alpha {
+    width: 60em;
+  }
+
+}
+
+
+
+/****************************************************
+  7. Yo Fonts Mama
+****************************************************/
+
+
+
+
+
+
+
+
