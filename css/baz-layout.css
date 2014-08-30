@@ -105,8 +105,6 @@ a:hover { text-decoration: underline; }
   2. Structure
 ****************************************************/
 
-
-
 .master-shadow {
   border-left: 1px solid #9F9F9F;
   border-right: 1px solid #9F9F9F;
@@ -555,7 +553,14 @@ a:hover { text-decoration: underline; }
 }
 
 .header-special {
-  font-size: 2rem;
+  font-size: 3rem;
+  font-weight: normal;
+}
+
+.logo-special {
+  position: absolute;
+  right: 10em;
+  top: 2em;
 }
 
 .login-container {
