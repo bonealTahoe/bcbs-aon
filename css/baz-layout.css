@@ -210,11 +210,6 @@ a:hover { text-decoration: underline; }
   height: 110%;
 }
 
-.nav-main-inner a:hover, .nav-main-inner a.activated {
-  background-color: #005AAB;
-  background-color: rgba(0, 90, 171, 0.1);
-  border-radius: 0.5em;
-}
 
 .nav-main-inner a.activated {
   cursor: default;
@@ -615,13 +610,15 @@ a:hover { text-decoration: underline; }
 
 
 @media only screen and (min-width: 33.813em) {
-
+    .nav-main {
+    width: 80%;
+  }
 
 }
 
 @media only screen and (min-width: 45em) {
     .nav-main {
-    width: 24em;
+    width: 92%;
   }
 }
 
@@ -629,7 +626,7 @@ a:hover { text-decoration: underline; }
 @media screen and (min-width: 56.33333em) {
 
   .nav-main {
-    width: 31.525em;    
+    width: 100%;    
   }
 
   .container-alpha {
