@@ -451,6 +451,8 @@ a:hover { text-decoration: underline; }
 .align-left { text-align: left; }
 .align-right { text-align: right; }
 
+.img-width-80 { width: 80%; margin: 0 9.99999%; }
+
 .clearfix:before, .clearfix:after {
   content: " ";
   display: table;
@@ -555,6 +557,10 @@ a:hover { text-decoration: underline; }
 
 .header-logo {
   margin: 1em 0 0 1em
+}
+
+.header-special {
+  font-size: 2rem;
 }
 
 .login-container {
