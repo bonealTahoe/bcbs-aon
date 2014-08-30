@@ -160,14 +160,14 @@ a:hover { text-decoration: underline; }
 .nav-main {
   margin-right: 1em;
   width: 100%; /* for small */
-  margin-top: 0.25em;
+  margin-top: 1em;
   margin-bottom: 0.25em;
 }
 
 .nav-main li {
   float: left;
   position: relative;
-  width: 20%;   /* desired width */
+  width: 16.666667%;   /* desired width */
 }
 
 .nav-main li:before {
@@ -197,7 +197,7 @@ a:hover { text-decoration: underline; }
   position: absolute;
   color: #005AAB;
   width: 100%;
-  height: 100%;
+  height: 110%;
   text-align: center;
   text-transform: uppercase;
   font-size: 0.55rem;
@@ -207,7 +207,7 @@ a:hover { text-decoration: underline; }
 .nav-main-inner a {
   display: block;
   width: 100%;
-  height: 100%;
+  height: 110%;
 }
 
 .nav-main-inner a:hover, .nav-main-inner a.activated {
@@ -361,6 +361,48 @@ a:hover { text-decoration: underline; }
 }
 
 @media only screen and (min-width: 56.3333em) {
+  .large-push-0 { position: relative; left: 0%; right: auto; }
+  .large-pull-0 { position: relative; right: 0%; left: auto; }
+  .large-push-1 { position: relative; left: 4.7619%; right: auto; }
+  .large-pull-1 { position: relative; right: 4.7619%; left: auto; }
+  .large-push-2 { position: relative; left: 9.52381%; right: auto; }
+  .large-pull-2 { position: relative; right: 9.52381%; left: auto; }
+  .large-push-3 { position: relative; left: 14.28571%; right: auto; }
+  .large-pull-3 { position: relative; right: 14.28571%; left: auto; }
+  .large-push-4 { position: relative; left: 19.04762%; right: auto; }
+  .large-pull-4 { position: relative; right: 19.04762%; left: auto; }
+  .large-push-5 { position: relative; left: 23.80952%; right: auto; }
+  .large-pull-5 { position: relative; right: 23.80952%; left: auto; }
+  .large-push-6 { position: relative; left: 28.57143%; right: auto; }
+  .large-pull-6 { position: relative; right: 28.57143%; left: auto; }
+  .large-push-7 { position: relative; left: 33.33333%; right: auto; }
+  .large-pull-7 { position: relative; right: 33.33333%; left: auto; }
+  .large-push-8 { position: relative; left: 38.09524%; right: auto; }
+  .large-pull-8 { position: relative; right: 38.09524%; left: auto; }
+  .large-push-9 { position: relative; left: 42.85714%; right: auto; }
+  .large-pull-9 { position: relative; right: 42.85714%; left: auto; }
+  .large-push-10 { position: relative; left: 47.61905%; right: auto; }
+  .large-pull-10 { position: relative; right: 47.61905%; left: auto; }
+  .large-push-11 { position: relative; left: 52.38095%; right: auto; }
+  .large-pull-11 { position: relative; right: 52.38095%; left: auto; }
+  .large-push-12 { position: relative; left: 57.14286%; right: auto; }
+  .large-pull-12 { position: relative; right: 57.14286%; left: auto; }
+  .large-push-13 { position: relative; left: 61.90476%; right: auto; }
+  .large-pull-13 { position: relative; right: 61.90476%; left: auto; }
+  .large-push-14 { position: relative; left: 66.66667%; right: auto; }
+  .large-pull-14 { position: relative; right: 66.66667%; left: auto; }
+  .large-push-15 { position: relative; left: 71.42857%; right: auto; }
+  .large-pull-15 { position: relative; right: 71.42857%; left: auto; }
+  .large-push-16 { position: relative; left: 76.19048%; right: auto; }
+  .large-pull-16 { position: relative; right: 76.19048%; left: auto; }
+  .large-push-17 { position: relative; left: 80.95238%; right: auto; }
+  .large-pull-17 { position: relative; right: 80.95238%; left: auto; }
+  .large-push-18 { position: relative; left: 85.71429%; right: auto; }
+  .large-pull-18 { position: relative; right: 85.71429%; left: auto; }
+  .large-push-19 { position: relative; left: 90.47619%; right: auto; }
+  .large-pull-19 { position: relative; right: 90.47619%; left: auto; }
+  .large-push-20 { position: relative; left: 95.2381%; right: auto; }
+  .large-pull-20 { position: relative; right: 95.2381%; left: auto; }
 
   .column,
   .columns { position: relative; padding-left: 0.25em; padding-right: 0.25em; float: left; }
@@ -406,6 +448,8 @@ a:hover { text-decoration: underline; }
 .right { float: right !important; }
 
 .align-center { text-align: center; }
+.align-left { text-align: left; }
+.align-right { text-align: right; }
 
 .clearfix:before, .clearfix:after {
   content: " ";
@@ -446,6 +490,7 @@ a:hover { text-decoration: underline; }
 .txt-bcbs-blue      { color: #005AAB; color: rgba(0, 90, 171, 1); }
 .txt-bcbs-blue-alt  { color: #0096D6; color: rgba(0,150,214, 1); }
 .txt-bcbs-orange    { color: #F90; color: rgba(255, 154, 0, 1); }
+.txt-grey           { color: #6e6e6e; color: rgba(110, 110, 110, 1); }
 
 .txt-weight-heavy { font-weight: bold; }
 .txt-weight-light { font-weight: lighter; }
@@ -453,19 +498,19 @@ a:hover { text-decoration: underline; }
 
 .nav-icon {
   width: 8em;
-  height: 6em;
+  height: 5.25em;
   display: block;
   margin: 2em auto 0.8em;
 }
 
-.nav-scope { background: url('../img/baz-sprite.png') 0 -9em no-repeat; }
-.nav-piggy { background: url('../img/baz-sprite.png') -7.25em -9em no-repeat; }
-.nav-pills { background: url('../img/baz-sprite.png') -14.5em -9em no-repeat; }
-.nav-mdkit { background: url('../img/baz-sprite.png') -23em -9em no-repeat; }
-.nav-info  { background: url('../img/baz-sprite.png') -30.5em -9em no-repeat; }
+.nav-scope { background: url('../img/baz-sprite.png') 0 -1.5em no-repeat; }
+.nav-piggy { background: url('../img/baz-sprite.png') -7.25em -1.5em no-repeat; }
+.nav-plan  { background: url('../img/baz-sprite.png') -15em -1.5em no-repeat; }
+.nav-pills { background: url('../img/baz-sprite.png') -22.5em -1.5em no-repeat; }
+.nav-mdkit { background: url('../img/baz-sprite.png') -30.5em -1.5em no-repeat; }
+.nav-info  { background: url('../img/baz-sprite.png') -38.4em -1.5em no-repeat; }
 .nav-phone { background: url('../img/baz-sprite.png') 0 -18em no-repeat; }
 .nav-mouse { background: url('../img/baz-sprite.png') -8em -18em no-repeat; }
-
 
 .ui-icon {
   width: 4em;
@@ -476,11 +521,12 @@ a:hover { text-decoration: underline; }
   position: absolute;
 }
 
-.ui-scope { background: url('../img/baz-sprite.png') 0.2em -9em no-repeat; }
-.ui-pills { background: url('../img/baz-sprite.png') -8.7em -9em no-repeat; }
-.ui-piggy { background: url('../img/baz-sprite.png') -4em -9em no-repeat; }
-.ui-phone { background: url('../img/baz-sprite.png') -22em -5em no-repeat }
-.ui-mouse { background: url('../img/baz-sprite.png') -22em -8.9em no-repeat }
+.ui-scope { background: url('../img/baz-sprite.png') 0.2em -4.5em no-repeat; }
+.ui-pills { background: url('../img/baz-sprite.png') -8.7em -4.5em no-repeat; }
+.ui-piggy { background: url('../img/baz-sprite.png') -4em -4.5em no-repeat; }
+.ui-plan { background: url('../img/baz-sprite.png') -8.5em -4.5em no-repeat; }
+.ui-phone { background: url('../img/baz-sprite.png') -27em -0.5em no-repeat; }
+.ui-mouse { background: url('../img/baz-sprite.png') -27em -4.4em no-repeat }
 
 .ico {
   display: block;
@@ -507,14 +553,16 @@ a:hover { text-decoration: underline; }
   max-width: 100%;
 }
 
-.logo-header {
-  height: 5em;
-  width: 20em;
-  background: url('../img/baz-sprite.png') 0 0 no-repeat;
-  display: block;
-  float: left;
-  margin-top: 1em;
-  margin-left: 1em;
+.header-logo {
+  margin: 1em 0 0 1em
+}
+
+.login-container {
+  position: absolute;
+  right: 1em;
+  top: 0.5em;
+  font-size: 0.75em;
+  z-index: 999;
 }
 
 .cta-group-item {
@@ -544,9 +592,9 @@ a:hover { text-decoration: underline; }
   padding: 0.5em 0;
 }
 
-.txt-copy {
+.txt-copy p {
   font-size: 0.75em;
-  line-height: 2em;
+  margin-top: 1.2em;
 }
 
 .txt-footer {
@@ -584,8 +632,12 @@ a:hover { text-decoration: underline; }
 
   .txt-copy {
     font-size: 0.75em;
-    line-height: 7em;
+    margin-top: 1.2em;
   }
+
+    .txt-copy p {
+      line-height: 0;
+    }
 
 }
 
