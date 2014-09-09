@@ -113,7 +113,7 @@ a:hover { text-decoration: underline; }
 }
 
 .header {
-  height: 6.875em;
+  min-height: 7em;
 }
 
 .container-hero {
