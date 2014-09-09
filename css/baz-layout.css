@@ -30,6 +30,7 @@ html, body {
   font-size: 100%;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+  color: #333333;
 }
 
 body {
@@ -96,7 +97,7 @@ h6 { font-size: 1rem; }
 
 a { text-decoration: none; }
 
-a { color: #005aab; }
+a { color: #00A5E1; }
 
 a:hover { text-decoration: underline; }
 
@@ -165,7 +166,7 @@ a:hover { text-decoration: underline; }
 .nav-main li {
   float: left;
   position: relative;
-  width: 16.666667%;   /* desired width */
+  width: 20%;   /* 100/5 */
 }
 
 .nav-main li:before {
@@ -175,7 +176,7 @@ a:hover { text-decoration: underline; }
 }
 
 .nav-main li .nav-main-inner {
-  bottom: 0;
+  bottom: -0.8em;
   left: 0;
   position: absolute;
   top: 0;
@@ -195,11 +196,12 @@ a:hover { text-decoration: underline; }
   position: absolute;
   color: #005AAB;
   width: 100%;
-  height: 110%;
+  height: 105%;
   text-align: center;
   text-transform: uppercase;
   font-size: 0.55rem;
   text-decoration: none; /** added to overwrite foundation a tag 5-7-2014 **/
+  line-height: 0.9em;
 }
 
 .nav-main-inner a {
@@ -208,11 +210,15 @@ a:hover { text-decoration: underline; }
   height: 110%;
 }
 
+.nav-main-inner a:hover, .nav-main-inner a.activated {
+  background-color: #005AAB;
+  background-color: rgba(0, 90, 171, 0.1);
+  border-radius: 0.5em;
+}
 
 .nav-main-inner a.activated {
   cursor: default;
 }
-
 
 /****************************************************
   4. Modular / Icons
@@ -549,7 +555,7 @@ a:hover { text-decoration: underline; }
 }
 
 .header-logo {
-  margin: 1em 0 0 1em
+  margin: 2em 0 0 1em
 }
 
 .header-special {
